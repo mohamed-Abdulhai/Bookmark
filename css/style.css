@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap');
+body{
+    font-family: 'PT Sans Caption', sans-serif;
+    background-color: #f7ecde;
+}
+::selection {
+    background-color: #fec260;
+}
+/* head start */
+.container h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+}
+.container h1::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    width: 265px;
+    height: 20px;
+    background-color: #fec260;
+    transition: 0.5s all;
+    z-index: -1;
+}
+.container h1:hover::after{
+    height: 40px;
+}
+.main {
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+h2{
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+/* head end */
+/* form input start */
+.firstIcon{
+    color: #3ca55c;
+    margin: 0 5px;
+}
+.secundIcon{
+    color: #b5ac49;
+    margin: 0 5px;
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+#btnSubmit{
+    color: #fff;
+    background-color: #d1512d;
+    border: 2px solid #d1512d;
+    transition: 0.3s all;
+}
+#btnSubmit:hover{
+    background-color: #bb4120;
+    border: 2px solid #a03315;
+}
+/* form inputs end */
+
+/* table start */
+.btnVisit{
+    color: #fff;
+    background-color: #9eb23b;
+    border: 2px solid #9eb23b;
+    transition: 0.2s all ;
+}
+.btnVisit:hover{
+    color: #fff;
+    background-color: #8a9e23;
+    border: 2px solid #6e8018;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.btnDelete {
+    color: #fff;
+    background-color: #eb1d36 ;
+    border:  2px solid #eb1d36;
+    transition: 0.2s all;
+}
+.btnDelete:hover{
+    color: #fff;
+    background-color: #d30820;
+    border: 2px solid #ba081d;
+}
+/* table end */
+
